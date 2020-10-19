@@ -25,7 +25,7 @@
     "version": "4.0.0",
     "binary_url": "https://github.com/vidulum/vidulum/releases/download/v2.1.0/VDL-Blockbook.tar.gz",
     "verification_type": "sha256",
-    "verification_source": "97808a01ce853c93bc9ff1587957df13ae6ffd4abd4a9620e2e66aeb14b60611",
+    "verification_source": "29f2c4b4ead377db13e73098cc9d857494b0e77d4a19bf5da5993306cb8be6db",
     "extract_command": "tar -C backend -xf",
     "exclude_files": [],
     "exec_command_template": "{{.Env.BackendInstallPath}}/{{.Coin.Alias}}/vidulumd -datadir={{.Env.BackendDataPath}}/{{.Coin.Alias}}/backend -conf={{.Env.BackendInstallPath}}/{{.Coin.Alias}}/{{.Coin.Alias}}.conf -pid=/run/{{.Coin.Alias}}/{{.Coin.Alias}}.pid",
