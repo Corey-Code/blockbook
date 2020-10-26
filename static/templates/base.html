@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1.0,shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -23,14 +20,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-md navbar-dark bg-trezor">
           <a class="navbar-brand" href="/" title="Home">
-            <div alt="Vidulum Wallet" style="margin-top: 3px">
-              <img
-                src="/static/images/logo.png"
-                alt="Vidulum Logo"
-                width="70"
-                height="70"
-              />
-            </div>
+            <div alt="Vidulum Wallet" style="margin-top: 3px"><!-- logo placeholder --></div>
           </a>
           <a class="navbar-brand" href="/"> {{.CoinLabel}} Explorer </a>
           <button
@@ -43,12 +33,8 @@
           <div class="navbar-collapse collapse" id="toggler">
             {{- if .InternalExplorer -}}
             <ul class="navbar-nav ml-md-auto">
-              <li class="nav-item">
-                <a href="/blocks" class="nav-link">Blocks</a>
-              </li>
-              <li class="nav-item">
-                <a href="/" class="nav-link">Status</a>
-              </li>
+              <li class="nav-item"><a href="/blocks" class="nav-link">Blocks</a></li>
+              <li class="nav-item"><a href="/" class="nav-link">Status</a></li>
             </ul>
             <span class="navbar-form ml-md-auto">
               <form id="search" action="/search" method="get">
@@ -63,49 +49,25 @@
             </span>
             {{- end -}}
             <ul class="navbar-nav ml-md-auto">
-              <li class="nav-item">
-                <a href="https://vidulum.app/" class="nav-link">Vidulum</a>
-              </li>
-              <li class="nav-item">
-                <a href="https://wallet.vidulum.app/" class="nav-link"
-                  >Wallet</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="https://chat.vidulum.app" class="nav-link">Support</a>
-              </li>
+              <li class="nav-item"><a href="https://vidulum.app/" class="nav-link">Vidulum</a></li>
+              <li class="nav-item"><a href="https://wallet.vidulum.app/" class="nav-link">Wallet</a></li>
+              <li class="nav-item"><a href="https://chat.vidulum.app" class="nav-link">Support</a></li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
-    <main id="wrap">
-      <div class="container">{{- template "specific" . -}}</div>
-    </main>
+    <main id="wrap"><div class="container">{{- template "specific" . -}}</div></main>
     <footer id="footer" class="footer">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark bg-trezor">
           <span class="navbar-nav">
-            <a
-              class="nav-link"
-              href="https://satoshilabs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >© 2020 SatoshiLabs</a
-            >
+            <a class="nav-link" href="https://satoshilabs.com/" target="_blank" rel="noopener noreferrer">© 2020 SatoshiLabs</a>
           </span>
           <span class="navbar-nav ml-md-auto">
-            <a
-              class="nav-link"
-              href="{{- .TOSLink -}}"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Terms</a
-            >
+            <a class="nav-link" href="{{- .TOSLink -}}" target="_blank" rel="noopener noreferrer">Terms</a>
           </span>
-          <span class="navbar-nav ml-md-auto">
-            <a href="/sendtx" class="nav-link">Send Transaction</a>
-          </span>
+          <span class="navbar-nav ml-md-auto"> <a href="/sendtx" class="nav-link">Send Transaction</a> </span>
         </nav>
       </div>
     </footer>
